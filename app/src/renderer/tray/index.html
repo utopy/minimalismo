@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        input{
+            width: 80%;
+        height: 10px;
+        border: 0;
+        border-bottom: 1px solid black;
+        padding: 20px;
+        display: block;
+        margin: auto;
+        }
+        input:focus{
+            outline: none;
+        }
+        textarea{
+        width: 80%;
+        padding: 20px;
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        outline: none;
+        border: none;
+    }
+
+    button{
+        width: 100px;
+        border: none;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 20px;
+        padding: 5px;
+        background: black;
+        color: white;
+        border-radius: 25px;
+    }
+    button:focus{
+        outline: none;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="app">
+        <input id="title" type="text" placeholder="NOTE TITLE">
+        <textarea id="body" placeholder="TEXT GOES HERE..."></textarea>
+        <button onclick="saveNote()">Save</button>
+    </div>
+
+        <script src="main.js"></script>
+
+</body>
+</html>
